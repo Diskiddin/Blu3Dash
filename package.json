@@ -1,0 +1,38 @@
+{
+  "name": "spark-bootstrap-theme",
+  "version": "2.0.0",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "4.0.0",
+    "bxslider": "4.2.11",
+    "flot": "0.8.0-alpha",
+    "font-awesome": "4.7.0",
+    "fullcalendar": "3.4.0",
+    "gmaps": "0.4.24",
+    "ionicons": "2.0.1",
+    "jquery": "3.2.1",
+    "jvectormap": "2.0.4",
+    "moment": "2.18.1",
+    "morris.js": "0.5.0",
+    "popper.js": "1.12.9",
+    "raphael": "2.2.7",
+    "slippry": "1.4.0",
+    "summernote": "0.8.7",
+    "twitter-bootstrap-wizard": "1.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "http-server": "^0.11.1",
+    "node-sass": "4.7.2",
+    "nodemon": "1.11.0"
+  },
+  "scripts": {
+    "build": "node-sass --include-path --source-map assets/css assets/scss/spark.scss assets/css/spark.css",
+    "deploy": "node-sass --output-style compressed --include-path scss assets/scss/spark.scss assets/css/spark.css",
+    "server": "http-server ./",
+    "start": "concurrently \"npm run server\" \"npm run watch\"",
+    "watch": "nodemon -e scss -x \"npm run build\""
+  },
+  "author": "Paul Laros <support@laros.io>",
+  "private": true
+}
