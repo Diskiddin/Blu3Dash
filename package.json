@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "chart.js": "^2.7.2",
+    "chartjs": "^0.3.24",
+    "fusioncharts": "^3.12.2",
+    "react-chartjs": "^1.2.0",
+    "react-chartkick": "^0.2.0",
+    "react-fusioncharts": "^1.0.5"
+  }
+}

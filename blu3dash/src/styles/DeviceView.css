@@ -1,0 +1,14 @@
+.device-title {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.back-button {
+  float: left;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  margin-left: 20px;
+}

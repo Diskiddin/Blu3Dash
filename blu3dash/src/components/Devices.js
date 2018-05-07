@@ -13,12 +13,13 @@ class Devices extends Component {
     var buttons = [];
     for (var device in this.state.devices) {
       buttons.push(<button
-         className="device-button"
-         style= {this.state.devices[device]['status'] === 'On' ? ({backgroundColor: "#47af2f"}) : ({backgroundColor: "#f25757"})
+         className = "device-button"
+         key = {device}
+         onClick = {this.props.function.bind(this, device)}
+         style = {this.state.devices[device]['status'] === 'on' ? ({backgroundColor: "#47af2f"}) : ({backgroundColor: "#f25757"})
       }>
          {this.state.devices[device]['name']}</button>)
     }
-    console.log(this.state.devices);
     return (
       <div>
         <div className="devices-label">Devices: {buttons}</div>
