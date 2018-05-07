@@ -1,0 +1,71 @@
+{
+  "name": "jvectormap",
+  "title": "jVectorMap",
+  "description": "jQuery plugin for embedding vector maps with reach API and methods for data visualization to the web-pages.",
+  "keywords": [
+    "map",
+    "vector",
+    "world",
+    "usa",
+    "choropleth"
+  ],
+  "version": "2.0.4",
+  "author": {
+    "name": "Kirill Lebedev",
+    "email": "echo.bjornd@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "AGPL",
+      "url": "http://www.gnu.org/copyleft/gpl.html"
+    },
+    {
+      "type": "Commercial",
+      "url": "http://www.binpress.com/license/read/id/3085/app/2122"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/bjornd/jvectormap/issues"
+  },
+  "homepage": "http://jvectormap.com",
+  "docs": "http://jvectormap.com/documentation/",
+  "download": "http://jvectormap.com/download/",
+  "main": "jquery-jvectormap.min.js",
+  "scripts": {
+    "build": "./build.sh"
+  },
+  "dependencies": {
+    "jquery": ">=1.5"
+  },
+  "devDependencies": {
+    "uglifyjs": "^2.4.10"
+  },
+  "gitHead": "599c265d3003d5612fa138b45147cac34acdea31",
+  "_id": "jvectormap@2.0.4",
+  "_shasum": "7913e1577285c156eda156430f90ed5ada068e4b",
+  "_from": "jvectormap@2.0.4",
+  "_npmVersion": "2.15.2",
+  "_nodeVersion": "0.10.44",
+  "_npmUser": {
+    "name": "alex-pex",
+    "email": "alexandre.paixao@live.fr"
+  },
+  "dist": {
+    "shasum": "7913e1577285c156eda156430f90ed5ada068e4b",
+    "tarball": "https://registry.npmjs.org/jvectormap/-/jvectormap-2.0.4.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "alex-pex",
+      "email": "alexandre.paixao@live.fr"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/jvectormap-2.0.4.tgz_1463408687557_0.8183351377956569"
+  },
+  "deprecated": "jvectormap is not maintened since Aug 2015. You can use jvectormap-next or jqvmap instead.",
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/jvectormap/-/jvectormap-2.0.4.tgz",
+  "readme": "ERROR: No README data found!"
+}

@@ -1,0 +1,70 @@
+{
+  "name": "bxslider",
+  "description": "Touch enabled jQuery plugin for creating responsive carousels and sliders.",
+  "version": "4.2.11",
+  "homepage": "http://bxslider.com",
+  "author": {
+    "name": "Steven Wanderski",
+    "email": "steven@bxcreative.com",
+    "url": "http://stevenwanderski.com"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevenwanderski/bxslider-4/bxslider-4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stevenwanderski/bxslider-4/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=0.10.28"
+  },
+  "keywords": [
+    "responsive",
+    "carousel",
+    "bxslider",
+    "jQuery",
+    "plugin"
+  ],
+  "gitHead": "1dbcd4debd585ffa51be08fb034575f5935fe83c",
+  "_id": "bxslider@4.2.11",
+  "scripts": {},
+  "_shasum": "1cd3cd76ee40fc1918af9d228de591fb638d85a5",
+  "_from": "bxslider@4.2.11",
+  "_npmVersion": "3.10.3",
+  "_nodeVersion": "6.3.1",
+  "_npmUser": {
+    "name": "stevenwanderski",
+    "email": "steven.wanderski@gmail.com"
+  },
+  "dist": {
+    "shasum": "1cd3cd76ee40fc1918af9d228de591fb638d85a5",
+    "tarball": "https://registry.npmjs.org/bxslider/-/bxslider-4.2.11.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "nucleartux",
+      "email": "nucleartux@gmail.com"
+    },
+    {
+      "name": "stevenwanderski",
+      "email": "steven.wanderski@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/bxslider-4.2.11.tgz_1488981551612_0.8190578608773649"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/bxslider/-/bxslider-4.2.11.tgz",
+  "readme": "ERROR: No README data found!"
+}
