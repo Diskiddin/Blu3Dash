@@ -8,19 +8,19 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      devices: [{name: 'Button1', type: 'Button', status:'on'}, {name: 'Button2', type: 'Button', status:'off'}],
-      deviceData: {
-        Button1: [
+      devices: [{name: 'Button1', type: 'Button', status:'on'}, {name: 'Button2', type: 'Button', status:'on'}],
+      deviceData: [
+        [
           ["Singe", 35],
           ["Double", 50],
           ["Long", 15]
         ],
-        Button2: [
+        [
           ["Single", 25],
           ["Double", 35],
           ["Long", 40]
-        ]
-      },
+        ],
+      ],
       homePage: true,
       deviceView: false,
       addDevicePage: false,
@@ -31,6 +31,13 @@ class App extends Component {
   addDevice = (device) => {
     var devices = this.state.devices
     devices.push(device)
+    if(device['type'] === 'Sensor') {
+      var newDeviceData = this.state.deviceData
+      newDeviceData.push({});
+      this.setState({
+        deviceData: newDeviceData
+      })
+    }
     this.setState({devices: devices, homePage: true, addDevicePage: false});
     console.log(device);
   }
@@ -78,7 +85,8 @@ class App extends Component {
               >Add Device</button>
             <Devices devices={this.state.devices} function = {this.viewDevice}/>
           </div>
-        : null}
+        : null
+        }
         {this.state.deviceView ?
           (
             <div>
@@ -88,7 +96,7 @@ class App extends Component {
               >Back</button>
               <DeviceView
                 device={this.state.devices[this.state.currentDevice]}
-                deviceData={this.state.deviceData[this.state.devices[this.state.currentDevice]['name']]}
+                deviceData={this.state.deviceData[this.state.currentDevice]}
                 deviceType={this.state.devices[this.state.currentDevice]['type']}/>
             </div>
           ) : null

@@ -21,3 +21,19 @@
   font-size: 15px;
   margin-top: 20px;
 }
+
+.download-button {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.download-text {
+  font-size: 15px;
+  text-decoration: none;
+  color: #333333;
+}

@@ -1,12 +1,31 @@
 .devices-label {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .device-button {
-  width: 100px;
-  height: 40px;
+  width: 200px;
+  height: 200px;
   font-size: 15px;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-width: 0px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #bbbbbb;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.devices-container {
+  text-align: center;
+}
+
+.device-button-title {
+  width: 180px;
+}
+
+.device-button-type {
+
 }

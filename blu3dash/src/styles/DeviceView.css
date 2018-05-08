@@ -12,3 +12,31 @@
   font-size: 15px;
   margin-left: 20px;
 }
+
+.device-type-and-style{
+  text-align: center;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.device-type-label {
+  text-align: center;
+  display: inline-flex;
+}
+
+.device-style-label {
+  margin-left: 20px;
+  text-align: center;
+  display: inline-flex;
+}
+
+.select-style {
+  margin-bottom: 20px;
+  float: right;
+  width: 50%;
+}
+
+.data-view {
+  margin: 0 auto;
+  width: 500px;
+}

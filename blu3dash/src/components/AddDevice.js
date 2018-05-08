@@ -29,7 +29,7 @@ class AddDevice extends Component {
         console.log("Repeat Name");
       }
     }*/
-    var newDevice = {name: this.state.deviceName, type: this.state.selectedOption.label, status:'on'}
+    var newDevice = {name: this.state.deviceName, type: this.state.selectedOption.selectedOption.label, status:'on'}
     this.props.addDeviceFunction(newDevice);
   }
 
@@ -57,6 +57,10 @@ class AddDevice extends Component {
             />
           </div>
           <button className="submit-button" onClick={this.submit}>Submit</button>
+          <button className="download-button">
+            <a className="download-text" href="https://drive.google.com/uc?export=download&id=1D3B6vT5e0Wi0yTD9p_puF_RKw65fgK4m" download="certificate.pem">Download Certificate</a>
+          </button>
+
         </div>
       </div>
     )
