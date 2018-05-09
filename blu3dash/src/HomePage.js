@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Devices from './components/Devices';
 import DeviceView from './components/DeviceView';
 import AddDevice from './components/AddDevice';
-import './App.css';
+import './HomePage.css';
 
-class App extends Component {
+class HomePage extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -43,6 +43,9 @@ class App extends Component {
       this.setState({
         deviceData: newDeviceData
       })
+    } else if (device['type'] === 'Monitor') {
+      var newDeviceData = this.state.deviceData
+      newDeviceData.push({});
     }
     this.setState({devices: devices, homePage: true, addDevicePage: false});
   }
@@ -123,4 +126,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default HomePage;
