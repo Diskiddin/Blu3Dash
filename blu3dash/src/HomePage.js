@@ -38,13 +38,13 @@ class HomePage extends Component {
         deviceData: newDeviceData
       })
     } else if (device['type'] === 'Button') {
-      var newDeviceData = this.state.deviceData
+      newDeviceData = this.state.deviceData
       newDeviceData.push([["Single", 0], ["Double", 0], ["Long", 0]]);
       this.setState({
         deviceData: newDeviceData
       })
     } else if (device['type'] === 'Monitor') {
-      var newDeviceData = this.state.deviceData
+      newDeviceData = this.state.deviceData
       newDeviceData.push({});
     }
     this.setState({devices: devices, homePage: true, addDevicePage: false});
@@ -69,6 +69,21 @@ class HomePage extends Component {
     this.setState({
       homePage: true,
       deviceView: false
+    })
+  }
+
+  deleteCurrentDevice = () => {
+    var newDevices = this.state.devices;
+    var newDeviceData = this.state.deviceData;
+    newDevices.splice(this.state.currentDevice, 1);
+    newDeviceData.splice(this.state.currentDevice, 1);
+
+    this.setState({
+      homePage: true,
+      deviceView: false,
+      devices: newDevices,
+      deviceData: newDeviceData,
+      currentDevice: 0
     })
   }
 
@@ -103,6 +118,7 @@ class HomePage extends Component {
               onClick = {this.backFromDeviceView.bind(this)}
               >Back</button>
               <DeviceView
+                deleteDeviceFunction={this.deleteCurrentDevice}
                 device={this.state.devices[this.state.currentDevice]}
                 deviceData={this.state.deviceData[this.state.currentDevice]}
                 deviceType={this.state.devices[this.state.currentDevice]['type']}/>

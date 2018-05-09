@@ -14,10 +14,23 @@
   cursor: pointer;
 }
 
+.delete-device-button {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  background: linear-gradient(#fc3f3f, #ff8484);
+  cursor: pointer;
+}
+
 .device-type-and-style{
   text-align: center;
   width: 350px;
   margin: 0 auto;
+}
+
+.button-center-class {
+  text-align: center;
+  margin-top: 100px;
 }
 
 .device-type-label {

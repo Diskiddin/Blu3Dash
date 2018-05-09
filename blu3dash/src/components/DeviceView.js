@@ -32,9 +32,9 @@ class DeviceView extends Component {
   componentDidMount() {
     let timer = null;
     if(this.state.deviceType === 'Monitor') {
-      timer = setInterval(this.addData, 1000);
-    } else {
       timer = setInterval(this.addData, 10000);
+    } else {
+      timer = setInterval(this.addData, 1000);
     }
     this.setState({
       timer: timer,
@@ -61,7 +61,7 @@ class DeviceView extends Component {
       });
     } else if (this.state.device['type'] === 'Sensor') {
       randomNumber = Math.floor(80 - (Math.random() * 5))
-      var newDeviceData = this.state.deviceData
+      newDeviceData = this.state.deviceData
       newDeviceData[new Date()] = randomNumber;
       if(Object.keys(newDeviceData).length > 10) {
         var keys = Object.keys(newDeviceData)
@@ -73,16 +73,20 @@ class DeviceView extends Component {
     } else if (this.state.device['type'] === 'Monitor') {
       randomNumber = Math.floor(Math.random() * 2)
       console.log(randomNumber);
-      var newDeviceData = this.state.deviceData
+      newDeviceData = this.state.deviceData
       newDeviceData[new Date()] = randomNumber;
       if(Object.keys(newDeviceData).length > 10) {
-        var keys = Object.keys(newDeviceData)
+        keys = Object.keys(newDeviceData)
         delete newDeviceData[keys[0]];
       }
       this.setState({
         deviceData: newDeviceData
       })
     }
+  }
+
+  deleteDevice = () => {
+    this.props.deleteDeviceFunction()
   }
 
   render() {
@@ -125,6 +129,9 @@ class DeviceView extends Component {
           ) : this.state.selectedOption.value === 'line' ? (
             <LineChart data={this.state.deviceData}/>
           ): (null)}
+        </div>
+        <div className="button-center-class">
+          <button className="delete-device-button" onClick={this.deleteDevice}>Delete Device</button>
         </div>
       </div>
     )
