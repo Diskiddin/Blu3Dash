@@ -11,7 +11,7 @@ class App extends Component {
       devices: [{name: 'Button1', type: 'Button', status:'on'}, {name: 'Button2', type: 'Button', status:'on'}],
       deviceData: [
         [
-          ["Singe", 35],
+          ["Single", 35],
           ["Double", 50],
           ["Long", 15]
         ],
@@ -37,9 +37,14 @@ class App extends Component {
       this.setState({
         deviceData: newDeviceData
       })
+    } else if (device['type'] === 'Button') {
+      var newDeviceData = this.state.deviceData
+      newDeviceData.push([["Single", 0], ["Double", 0], ["Long", 0]]);
+      this.setState({
+        deviceData: newDeviceData
+      })
     }
     this.setState({devices: devices, homePage: true, addDevicePage: false});
-    console.log(device);
   }
 
   viewDevice = (device) => {

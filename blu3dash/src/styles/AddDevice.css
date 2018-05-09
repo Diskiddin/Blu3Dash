@@ -20,6 +20,7 @@
   height: 40px;
   font-size: 15px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .download-button {
