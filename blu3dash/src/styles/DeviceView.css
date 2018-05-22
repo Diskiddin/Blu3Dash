@@ -46,7 +46,7 @@
 
 .select-style {
   margin-bottom: 20px;
-  float: right;
+  margin: 0 auto;
   width: 50%;
 }
 
